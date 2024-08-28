@@ -1,0 +1,55 @@
+.cursor {
+  @include pos-center(fixed);
+  @include flexbox;
+  top: 0;
+  left: 0;
+  z-index: $cursor-level;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  background-color: $purple;
+  border-radius: 50%;
+  transition: transform 300ms ease-out,
+    width 500ms cubic-bezier(0.17, 0.04, 0.03, 0.94),
+    height 500ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+
+  &.cursor-active {
+    width: 100px;
+    height: 100px;
+  }
+
+  &.cursor-menu,
+  &.cursor-projects,
+  &.cursor-projects-article,
+  &.cursor-call,
+  &.cursor-youtube,
+  &.cursor-close {
+    &::after {
+      color: $white;
+    }
+  }
+
+  &.cursor-menu::after {
+    content: 'Menu';
+  }
+
+  &.cursor-projects::after {
+    content: 'Projects';
+  }
+
+  &.cursor-projects-article::after {
+    content: 'View';
+  }
+
+  &.cursor-call::after {
+    content: 'Call';
+  }
+
+  &.cursor-youtube::after {
+    content: 'Watch';
+  }
+
+  &.cursor-close::after {
+    content: 'Close';
+  }
+}

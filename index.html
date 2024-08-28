@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min &copy; 2024 Portfolio</title>
+    <!-- Adobe Fonts  (font-weight:3,4,6,700)-->
+    <link rel="stylesheet" href="https://use.typekit.net/ltb3ddy.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oou5jtw.css" />
+
+    <!-- Google Fonts (Noto Sans KR) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./js/dark-mode.js"></script>
+    <!-- 화면 깜빡임을 방지하기 위하여 body 전단에 스크립트 작성. -->
+  </head>
+  <body>
+    <div class="intro">
+      <div></div>
+
+      <div class="loading">
+        <div class="loading-percent-wrap">
+          <div class="loading-percent"></div>
+          <div class="loading-percent"></div>
+          <div class="loading-percent"></div>
+          <div class="loading-percent"></div>
+          <div class="loading-percent"></div>
+          <div class="loading-percent"></div>
+          <div class="loading-percent"></div>
+          <div class="loading-percent"></div>
+          <div class="loading-percent"></div>
+          <div class="loading-percent"></div>
+        </div>
+
+        <span>Loading...</span>
+      </div>
+
+      <div class="intro-footer">
+        <p class="intro-footer-text sm-hidden">
+          Hello World! Welcome to my website. I'm web publisher SEUNGMIN.<br />
+          Are you ready to join me? Let's get started!
+        </p>
+
+        <address>2024 &copy; Lee Seung-Min</address>
+      </div>
+    </div>
+
+    <header class="gnb">
+      <div class="gnb-wrap">
+        <div class="gnb-left">
+          <button
+            class="gnb-menu-btn"
+            type="button"
+            aria-label="메뉴 열기"
+            data-name="menu"
+          >
+            <span class="btn-text">menu</span>
+
+            <img class="logo-white" src="./assets/img/logo-wh.svg" alt="로고" />
+            <img class="logo-black" src="./assets/img/logo.svg" alt="로고" />
+          </button>
+        </div>
+        <div class="gnb-right">
+          <h1 class="main-title sm-hidden">
+            <a href="javascript:location.reload()">
+              Min &copy;
+              <span class="visible">2024</span>
+              <span class="hidden">Portfolio</span>
+            </a>
+          </h1>
+          <div class="gnb-right-content">
+            <p class="gnb-time">
+              <span class="gnb-time-content">
+                <time datetime="2024-07-03 00:00">00:00</time>
+                <span class="ampm">am</span>
+              </span>
+              <span class="divider">/</span>
+              <span>Seoul</span>
+            </p>
+            <button
+              id="gnb-dark-btn"
+              class="gnb-dark-btn"
+              type="button"
+              aria-label="다크모드 스위치"
+            >
+              <span class="btn-switch"></span>
+              <span class="btn-bg"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="home main-section" aria-labelledby="menu-home">
+        <div class="home-contents">
+          <h3 class="home-contents-title">
+            Web Publisher<br /><span>Seung Min</span>
+          </h3>
+
+          <div class="home-contents-text-wrap">
+            <div class="home-contents-text">
+              <p class="home-contents-about">
+                This is the portfolio website of the
+                <span>Web Publisher Seungmin</span>. You can see my web, and my
+                video works here.
+              </p>
+              <div class="home-contents-alert">
+                <div class="home-contents-logo">
+                  <img class="logo-black" src="./assets/img/logo.svg" alt="" />
+                  <img
+                    class="logo-white"
+                    src="./assets/img/logo-wh.svg"
+                    alt=""
+                  />
+                </div>
+                <p>
+                  This site is designed for<br />
+                  <span>Portfolio purposes.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a class="home-contents-btn lg-only" href="#" data-name="projects">
+            <i class="bi bi-arrow-right"></i>
+            <span>Let's Watch!</span>
+          </a>
+        </div>
+
+        <div class="home-footer">
+          <div class="home-footer-bg"></div>
+          <div class="home-footer-video">
+            <video
+              src="./assets/video/thehyundai.mp4"
+              autoplay
+              muted
+              playsinline
+              loop
+            ></video>
+          </div>
+        </div>
+      </section>
+
+      <section class="about main-section" aria-labelledby="menu-about">
+        <h5 class="about-title">
+          <span class="about-title-hello">Hello World!</span>
+          <strong>트렌드</strong>하면서도 <strong>기본</strong>을 지키는
+          <strong>웹 퍼블리셔 이승민</strong>입니다. 웹개발 트렌드는 하루가
+          다르게 바뀌고 있으며 이에 따라 신기술을
+          <strong>발 빠르게 습득해</strong> 보다
+          <strong>편리하고 확장성 있는</strong> 웹서비스를 구축하기위해
+          노력하겠습니다.이와 동시에 시멘틱 마크업 등의
+          <strong>기본을 항상 지키는 웹 퍼블리셔</strong>가 되도록 하겠습니다.
+        </h5>
+
+        <div class="about-contents">
+          <h4 class="about-contents-title">Additional Skills & To Study</h4>
+
+          <div class="about-contents-wrap">
+            <div class="about-contents-article">
+              <div class="about-article additional-skill">
+                <h5 class="about-article-title">Additional Skills</h5>
+                <p class="about-article-description">
+                  6개월간의 국비학원 멀티미디어 과정 수료를 통해서 웹 개발
+                  기술뿐 아니라 Adobe Photoshop, Illustartor를 통한 2D 이미지
+                  편집, 제작과 Adobe Priemre Pro, After Effects를 통한 영상 종합
+                  편집을 교육받았습니다.
+                </p>
+              </div>
+              <div class="about-article to-study">
+                <h5 class="about-article-title">To Study</h5>
+                <p class="about-article-description">
+                  현재 공부하고 있는 바닐라 JavaScript를 바탕으로 현재 웹 개발
+                  분야에서 가장 인기 있는 라이브러리 중 하나인 React를
+                  학습하려고 합니다. React를 배워 현재의 웹 개발 스킬을 더욱
+                  향상시키고 지금보다 더 다양한 프로젝트를 접할 기회를 가지고
+                  싶습니다.
+                </p>
+              </div>
+            </div>
+            <a class="btn-small" href="mailto:tmdalsqqz@gmail.com">
+              <i class="bi bi-arrow-up-right"></i>
+              Get in touch!
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects main-section" aria-labelledby="menu-projects">
+        <h3 class="main-section-title">Projects</h3>
+        <ul class="projects-article-list">
+          <li class="projects-article-item">
+            <div class="projects-article-header">
+              <h5 class="title">
+                <a href="javascript:location.reload()">Portfolio Site</a>
+              </h5>
+              <a class="btn-icon" href="javascript:location.reload()">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+            <div class="projects-article-content">
+              <a
+                href="javascript:location.reload()"
+                class="projects-article-thumbnail"
+                data-name="projects-article"
+              >
+                <img src="./assets/img/mockup-portfolio.png" alt="" />
+              </a>
+
+              <div class="projects-article-text">
+                <p class="desc">
+                  <a href="https://www.konpo.studio/" target="_blank"
+                    >레퍼런스 사이트</a
+                  >를 참고하여 포토샵 시안 제작 후 개인 포트폴리오 사이트를
+                  구현하였습니다.
+                </p>
+                <ul class="misc-list">
+                  <li class="misc-item"><span>#responsible</span></li>
+                  <li class="misc-item"><span>#vanila_JS</span></li>
+                  <li class="misc-item"><span>#scss</span></li>
+                  <li class="misc-item"><span>#photoshop</span></li>
+                  <li class="misc-item"><span>#gsap</span></li>
+                </ul>
+                <a
+                  class="btn-img"
+                  href="https://github.com/minii97/portfolio"
+                  target="_blank"
+                >
+                  <div class="btn-img-logo">
+                    <img
+                      class="btn-img-logo-white"
+                      src="./assets/img/github-logo-wh.png"
+                      alt=""
+                    />
+                    <img
+                      class="btn-img-logo-black"
+                      src="./assets/img/github-logo-bk.png"
+                      alt=""
+                    />
+                  </div>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="projects-article-item">
+            <div class="projects-article-header">
+              <h5 class="title">
+                <a
+                  href="https://minii97.github.io/hivelab-clone/"
+                  target="_blank"
+                  >Hivelab</a
+                >
+              </h5>
+              <a
+                class="btn-icon"
+                href="https://minii97.github.io/hivelab-clone/"
+                target="_blank"
+              >
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+            <div class="projects-article-content">
+              <a
+                href="https://minii97.github.io/hivelab-clone/"
+                class="projects-article-thumbnail"
+                data-name="projects-article"
+                target="_blank"
+              >
+                <img src="./assets/img/mockup-hivelab.png" alt="" />
+              </a>
+
+              <div class="projects-article-text">
+                <p class="desc">
+                  국내 디지털 커뮤니케이션 기업 하이브랩 사이트를 클론
+                  코딩하였습니다.
+                </p>
+                <ul class="misc-list">
+                  <li class="misc-item"><span>#pc</span></li>
+                  <li class="misc-item"><span>#css</span></li>
+                  <li class="misc-item"><span>#vanila_JS</span></li>
+                  <li class="misc-item"><span>#full_page</span></li>
+                </ul>
+                <a
+                  class="btn-img"
+                  href="https://github.com/minii97/hivelab-clone"
+                  target="_blank"
+                >
+                  <div class="btn-img-logo">
+                    <img
+                      class="btn-img-logo-white"
+                      src="./assets/img/github-logo-wh.png"
+                      alt=""
+                    />
+                    <img
+                      class="btn-img-logo-black"
+                      src="./assets/img/github-logo-bk.png"
+                      alt=""
+                    />
+                  </div>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="projects-article-item">
+            <div class="projects-article-header">
+              <h5 class="title">
+                <a
+                  href="https://minii97.github.io/tomorrow-house-clone/"
+                  target="_blank"
+                  >Today House</a
+                >
+              </h5>
+              <a
+                class="btn-icon"
+                href="https://minii97.github.io/tomorrow-house-clone/"
+                target="_blank"
+              >
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+            <div class="projects-article-content">
+              <a
+                href="https://minii97.github.io/tomorrow-house-clone/"
+                class="projects-article-thumbnail"
+                data-name="projects-article"
+                target="_blank"
+              >
+                <img src="./assets/img/mockup-house.png" alt="" />
+              </a>
+
+              <div class="projects-article-text">
+                <p class="desc">
+                  국내 인테리어 플랫폼 오늘의 집 사이트 컨셉으로 제작된 Figma
+                  시안을 반응형으로 클론 코딩하였습니다.
+                </p>
+                <ul class="misc-list">
+                  <li class="misc-item"><span>#pc</span></li>
+                  <li class="misc-item"><span>#vanila_JS</span></li>
+                  <li class="misc-item"><span>#scss</span></li>
+                  <li class="misc-item"><span>#figma</span></li>
+                  <li class="misc-item"><span>#tiny-slide</span></li>
+                </ul>
+                <a
+                  class="btn-img"
+                  href="https://github.com/minii97/tomorrow-house-clone"
+                  target="_blank"
+                >
+                  <div class="btn-img-logo">
+                    <img
+                      class="btn-img-logo-white"
+                      src="./assets/img/github-logo-wh.png"
+                      alt=""
+                    />
+                    <img
+                      class="btn-img-logo-black"
+                      src="./assets/img/github-logo-bk.png"
+                      alt=""
+                    />
+                  </div>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="projects-article-item">
+            <div class="projects-article-header">
+              <h5 class="title">
+                <a
+                  href="https://minii97.github.io/momentumapp-clone/"
+                  target="_blank"
+                  >Momentum App</a
+                >
+              </h5>
+              <a
+                class="btn-icon"
+                href="https://minii97.github.io/momentumapp-clone/"
+                target="_blank"
+              >
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+            <div class="projects-article-content">
+              <a
+                href="https://minii97.github.io/momentumapp-clone/"
+                class="projects-article-thumbnail"
+                data-name="projects-article"
+                target="_blank"
+              >
+                <img src="./assets/img/mockup-momentum.png" alt="" />
+              </a>
+
+              <div class="projects-article-text">
+                <p class="desc">
+                  크롬 익스텐션 "Momentum" App의 일부 기능 (랜덤 배경/인용구,
+                  시계, Todo, 로그인/로그아웃)을 클론 코딩을 통하여
+                  구현하였습니다.
+                </p>
+                <ul class="misc-list">
+                  <li class="misc-item"><span>#responsive</span></li>
+                  <li class="misc-item"><span>#vanila_JS</span></li>
+                  <li class="misc-item"><span>#ajax</span></li>
+                  <li class="misc-item"><span>#scss</span></li>
+                </ul>
+                <a
+                  class="btn-img"
+                  href="https://github.com/minii97/momentumapp-clone"
+                  target="_blank"
+                >
+                  <div class="btn-img-logo">
+                    <img
+                      class="btn-img-logo-white"
+                      src="./assets/img/github-logo-wh.png"
+                      alt=""
+                    />
+                    <img
+                      class="btn-img-logo-black"
+                      src="./assets/img/github-logo-bk.png"
+                      alt=""
+                    />
+                  </div>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="etc-work main-section">
+        <h3 class="main-section-title">ETC Work</h3>
+        <p class="etc-work-desc">
+          <i class="bi bi-exclamation" aria-hidden></i>
+          해당 비디오들은 정식 제작된 비디오가 아니며 학원 수강 중 과제 제출을
+          위해 만든 컨셉트 비디오임을 알립니다.
+
+          <span class="lg-hidden">
+            <i class="bi bi-bell" aria-hidden></i>
+            썸네일을 클릭하면 동영상을 재생하실 수 있습니다. (정지하시려면
+            동영상 영역을 한번 더 클릭해주세요.)
+          </span>
+        </p>
+
+        <ul class="etc-work-list">
+          <li class="etc-work-item">
+            <div class="etc-work-item-sm lg-hidden">
+              <div class="etc-work-item-header">
+                <p class="etc-work-category">Promo Concept Video</p>
+                <h5 class="etc-work-title">
+                  The Hyundai Promotion Concept Video
+                </h5>
+              </div>
+              <div class="etc-work-video">
+                <video
+                  src="./assets/video/thehyundai.mp4"
+                  loop
+                  playsinline
+                ></video>
+                <div class="thumbnail" data-num="1"></div>
+              </div>
+              <div class="etc-work-item-footer">
+                <a
+                  class="etc-work-youtube-link"
+                  target="_blank"
+                  href="https://youtu.be/OhD--UWHgng?si=OhaAEG6UKquuCez9"
+                >
+                  <i class="bi bi-youtube"></i>
+                  <span>Watch in youtube</span>
+                </a>
+                <span class="etc-work-year">2023</span>
+              </div>
+            </div>
+            <div class="etc-work-item-lg lg-only">
+              <div class="etc-work-item-header">
+                <p class="etc-work-category">Promo Concept Video</p>
+                <h5 class="etc-work-title">
+                  The Hyundai Promotion Concept Video
+                </h5>
+                <div class="header-right">
+                  <span class="etc-work-year">2023</span>
+                  <a
+                    class="etc-work-youtube-link"
+                    target="_blank"
+                    href="https://youtu.be/OhD--UWHgng?si=OhaAEG6UKquuCez9"
+                    data-name="youtube"
+                  >
+                    <span>Watch in youtube</span>
+                  </a>
+                </div>
+              </div>
+              <div class="etc-work-video-wrap">
+                <div class="etc-work-video">
+                  <video src="./assets/video/thehyundai.mp4" loop muted></video>
+                  <div class="thumbnail"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="etc-work-item">
+            <div class="etc-work-item-sm lg-hidden">
+              <div class="etc-work-item-header">
+                <p class="etc-work-category">Promo Concept Video</p>
+                <h5 class="etc-work-title">
+                  Crush Blackvox Intro Concept Video
+                </h5>
+              </div>
+              <div class="etc-work-video">
+                <video src="./assets/video/crush.mp4" loop playsinline></video>
+                <div class="thumbnail" data-num="2"></div>
+              </div>
+              <div class="etc-work-item-footer">
+                <a
+                  class="etc-work-youtube-link"
+                  target="_blank"
+                  href="https://youtu.be/LW60wtqBnIQ?si=ob6E107jYjCXEd4t"
+                >
+                  <i class="bi bi-youtube"></i>
+                  <span>Watch in youtube</span>
+                </a>
+                <span class="etc-work-year">2023</span>
+              </div>
+            </div>
+            <div class="etc-work-item-lg lg-only">
+              <div class="etc-work-item-header">
+                <p class="etc-work-category">Promo Concept Video</p>
+                <h5 class="etc-work-title">
+                  Crush Blackvox Intro Concept Video
+                </h5>
+                <div class="header-right">
+                  <span class="etc-work-year">2023</span>
+                  <a
+                    class="etc-work-youtube-link"
+                    target="_blank"
+                    href="https://youtu.be/LW60wtqBnIQ?si=ob6E107jYjCXEd4t"
+                    data-name="youtube"
+                  >
+                    <span>Watch in youtube</span>
+                  </a>
+                </div>
+              </div>
+              <div class="etc-work-video-wrap">
+                <div class="etc-work-video">
+                  <video src="./assets/video/crush.mp4" loop muted></video>
+                  <div class="thumbnail"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="etc-work-item">
+            <div class="etc-work-item-sm lg-hidden">
+              <div class="etc-work-item-header">
+                <p class="etc-work-category">Typo Animation</p>
+                <h5 class="etc-work-title">KREAM Promotion Concept Video</h5>
+              </div>
+              <div class="etc-work-video">
+                <video
+                  src="./assets/video/kream.mp4"
+                  muted
+                  loop
+                  playsinline
+                ></video>
+                <div class="thumbnail" data-num="3"></div>
+              </div>
+              <div class="etc-work-item-footer">
+                <a
+                  class="etc-work-youtube-link"
+                  target="_blank"
+                  href="https://youtu.be/Tfm5qZEWJu4?si=qAkKjZF6F4aSsqY8"
+                >
+                  <i class="bi bi-youtube"></i>
+                  <span>Watch in youtube</span>
+                </a>
+                <span class="etc-work-year">2023</span>
+              </div>
+            </div>
+
+            <div class="etc-work-item-lg lg-only">
+              <div class="etc-work-item-header">
+                <p class="etc-work-category">Typo Animation</p>
+                <h5 class="etc-work-title">KREAM Promotion Concept Video</h5>
+                <div class="header-right">
+                  <span class="etc-work-year">2023</span>
+                  <a
+                    class="etc-work-youtube-link"
+                    target="_blank"
+                    href="https://youtu.be/Tfm5qZEWJu4?si=qAkKjZF6F4aSsqY8"
+                    data-name="youtube"
+                  >
+                    <span>Watch in youtube</span>
+                  </a>
+                </div>
+              </div>
+              <div class="etc-work-video-wrap">
+                <div class="etc-work-video">
+                  <video src="./assets/video/kream.mp4" loop muted></video>
+                  <div class="thumbnail"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer" aria-labelledby="menu-contact">
+      <div class="footer-header">
+        <h3 class="title">Let’s Work!</h3>
+        <a class="btn-small" href="mailto:tmdalsqqz@gmail.com">
+          <i class="bi bi-arrow-up-right"></i>
+          Get in touch!
+        </a>
+      </div>
+
+      <div class="footer-phone">
+        <div class="logo">
+          <img class="logo-white" src="./assets/img/logo-wh.svg" alt="" />
+          <img class="logo-black" src="./assets/img/logo.svg" alt="" />
+        </div>
+        <p class="footer-phone-desc">
+          언제나 연락을 기다리고 있습니다!<br />
+          메일이 아닌
+          <a href="tel:+8210-3977-5017" data-name="call"
+            >문자 및 전화로의 연락도</a
+          >
+          빠른 회신 드리겠습니다.
+        </p>
+      </div>
+
+      <ul class="footer-contact-list">
+        <li class="footer-contact-item">
+          <a href="https://github.com/minii97" target="_blank">
+            <i aria-hidden class="bi bi-github"></i>
+            <span>Github</span>
+          </a>
+        </li>
+        <li class="footer-contact-item">
+          <a
+            href="https://minii97.notion.site/1965c53d5e99499498f346dbf4eb1fa9"
+            target="_blank"
+          >
+            <i aria-hidden class="bi bi-chat-square-dots-fill"></i>
+            <span>Notion</span>
+          </a>
+        </li>
+        <li class="footer-contact-item">
+          <a
+            href="https://www.youtube.com/channel/UC8LSye00Jcd4l6DXsTfLMHg"
+            target="_blank"
+          >
+            <i aria-hidden class="bi bi-youtube"></i>
+            <span>Youtube</span>
+          </a>
+        </li>
+        <li class="footer-contact-item">
+          <a href="https://www.instagram.com/2eeseungmln/" target="_blank">
+            <i aria-hidden class="bi bi-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer-copyright">
+        <span>2024 &copy; Lee Seung-Min</span>
+        <p>해당 사이트는 포트폴리오 용도로 제작되었습니다.</p>
+      </div>
+    </footer>
+
+    <div class="prog lg-only">
+      <div class="prog-bar">
+        <div class="prog-circle"></div>
+      </div>
+    </div>
+
+    <aside class="menu">
+      <h3 class="visually-hidden">메뉴</h3>
+
+      <div class="menu-contact lg-only">
+        <div class="menu-contact-wrap">
+          <header class="menu-contact-header">
+            <div class="menu-contact-header-img active">
+              <img src="assets/img/logo-gray.svg" alt="" />
+            </div>
+            <i aria-hidden class="bi bi-github" data-id="github"></i>
+            <i
+              aria-hidden
+              class="bi bi-chat-square-dots-fill"
+              data-id="notion"
+            ></i>
+            <i aria-hidden class="bi bi-youtube" data-id="youtube"></i>
+            <i aria-hidden class="bi bi-instagram" data-id="insta"></i>
+          </header>
+          <ul class="menu-contact-list">
+            <li class="menu-contact-item">
+              <a
+                class="github"
+                target="_blank"
+                href="https://github.com/minii97"
+              >
+                <span class="contact-item-text">Github</span>
+                <div class="contact-item-logo">
+                  <img src="./assets/img/logo-wh.svg" alt="" aria-hidden />
+                </div>
+              </a>
+            </li>
+            <li class="menu-contact-item">
+              <a
+                class="notion"
+                target="_blank"
+                href="https://minii97.notion.site/1965c53d5e99499498f346dbf4eb1fa9"
+              >
+                <span class="contact-item-text">Notion</span>
+                <div class="contact-item-logo">
+                  <img src="./assets/img/logo-wh.svg" alt="" aria-hidden />
+                </div>
+              </a>
+            </li>
+            <li class="menu-contact-item">
+              <a
+                class="youtube"
+                target="_blank"
+                href="https://www.youtube.com/channel/UC8LSye00Jcd4l6DXsTfLMHg"
+              >
+                <span class="contact-item-text">Youtube</span>
+                <div class="contact-item-logo">
+                  <img src="./assets/img/logo-wh.svg" alt="" aria-hidden />
+                </div>
+              </a>
+            </li>
+            <li class="menu-contact-item">
+              <a
+                class="insta"
+                target="_blank"
+                href="https://www.instagram.com/2eeseungmln/"
+              >
+                <span class="contact-item-text">Instagram</span>
+                <div class="contact-item-logo">
+                  <img src="./assets/img/logo-wh.svg" alt="" aria-hidden />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <footer class="menu-contact-footer">
+          <p>Contact me!</p>
+          <address class="mail-address">
+            <a href="mailto:tmdalsqqz@gmail.com">tmdalsqqz@gmail.com</a>
+          </address>
+        </footer>
+      </div>
+
+      <nav class="menu-nav">
+        <ol class="menu-nav-list">
+          <li class="menu-nav-item" id="menu-home">
+            <a href="#">
+              <i class="bi bi-1-circle number"></i>
+
+              <div class="nav-item-footer">
+                <h3 class="nav-title">Home</h3>
+                <i class="bi bi-house"></i>
+                <div class="logo">
+                  <img src="assets/img/logo.svg" alt="" />
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="menu-nav-item" id="menu-about">
+            <a href="#">
+              <i class="bi bi-2-circle"></i>
+              <div class="nav-item-footer">
+                <h3 class="nav-title">About</h3>
+                <i class="bi bi-person-circle"></i>
+                <div class="logo">
+                  <img src="assets/img/logo.svg" alt="" />
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="menu-nav-item" id="menu-projects">
+            <a href="#">
+              <i class="bi bi-3-circle"></i>
+              <div class="nav-item-footer">
+                <h3 class="nav-title">Projects</h3>
+                <i class="bi bi-display"></i>
+                <div class="logo">
+                  <img src="assets/img/logo.svg" alt="" />
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="menu-nav-item" id="menu-contact">
+            <a href="#">
+              <i class="bi bi-4-circle"></i>
+              <div class="nav-item-footer">
+                <h3 class="nav-title">Contact</h3>
+                <i class="bi bi-whatsapp"></i>
+                <div class="logo">
+                  <img src="assets/img/logo.svg" alt="" />
+                </div>
+              </div>
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </aside>
+
+    <div class="overlay"></div>
+
+    <div class="cursor lg-only"></div>
+
+    <!-- Import GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Import JS Files -->
+    <script src="./js/global.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/etc-work.js"></script>
+    <script src="./js/gsap-animation.js"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/watch-btn.js"></script>
+    <script src="./js/dark-mode-btn.js"></script>
+    <script src="./js/home-video.js"></script>
+    <script src="./js/intro.js"></script>
+  </body>
+</html>

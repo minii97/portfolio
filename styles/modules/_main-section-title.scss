@@ -1,0 +1,11 @@
+.main-section-title {
+  padding: 40px 0;
+  margin-bottom: 30px;
+  font-size: clamp(50px, 16vw, 150px);
+  line-height: 1;
+  background-image: url(./assets/img/dot-bg.png);
+
+  @include responsive(T) {
+    padding: 80px 15px;
+  }
+}

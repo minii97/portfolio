@@ -1,0 +1,83 @@
+// sass-lint:disable no-vendor-prefixes
+
+html {
+  font-family: 'basic-sans', 'Noto Sans KR', sans-serif;
+  background-color: transparent !important;
+}
+
+* {
+  margin: 0;
+  font-family: 'basic-sans', 'Noto Sans KR', sans-serif;
+
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'basic-sans', 'Noto Sans KR', sans-serif;
+
+  &.menu-active,
+  &.loading {
+    overflow: hidden;
+    // aside 활성화되면 스크롤 방지
+  }
+
+  &.menu-active {
+    .prog-bar {
+      display: none;
+    }
+  }
+}
+
+// reset normalize.css style
+h1 {
+  margin: 0;
+}
+
+// reset anchor style
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+//reset form elements style
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 0;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+//enhance the UX of buttons and a elements.
+a,
+button {
+  cursor: pointer;
+}
+
+button {
+  padding: 0;
+}
+
+//reset list elements default style
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+//Change the default font-style of address element
+address {
+  font-style: normal;
+}
+
+@include responsive(T) {
+  body {
+  }
+}

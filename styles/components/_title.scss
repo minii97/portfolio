@@ -1,0 +1,43 @@
+.main-title {
+  position: relative;
+  flex: 1;
+  font-size: 22px;
+  text-transform: uppercase;
+
+  .hidden {
+    position: absolute;
+    top: 0;
+    left: 94px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
+      opacity 150ms ease-in, visibility 150ms ease-in;
+  }
+
+  @include responsive(D) {
+    font-size: 32px;
+
+    .visible {
+      display: inline-block;
+      transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
+        opacity 150ms ease-in, visibility 150ms ease-in;
+    }
+
+    a {
+      &:hover {
+        .visible {
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-100%);
+        }
+
+        .hidden {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}

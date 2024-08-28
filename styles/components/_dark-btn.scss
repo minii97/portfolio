@@ -1,0 +1,72 @@
+.gnb-dark-btn {
+  position: relative;
+  width: 16px;
+  height: 16px;
+
+  &.light-mode {
+    .btn-switch {
+      transform: translate(-100%, -50%);
+    }
+  }
+
+  .btn-switch {
+    @include pos-center-y;
+    left: 0;
+    z-index: $dark-mode-btn-sw-level;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-text);
+    border-radius: 50%;
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .btn-bg {
+    @include pos-center-y;
+    right: 0;
+    z-index: $dark-mode-btn-bg-level;
+    width: 32px;
+    height: 16px;
+    background-color: var(--color-border);
+    border-radius: 9999px;
+    transform: translateY(-50%) scaleX(1);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin: right;
+  }
+
+  @include responsive(D) {
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+      .btn-switch {
+        transform: translate(-90%, -50%);
+      }
+
+      .btn-bg {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-50%) scaleX(1);
+      }
+    }
+
+    &.light-mode {
+      .btn-switch {
+        transform: translate(0, -50%);
+      }
+    }
+
+    .btn-switch {
+      width: 20px;
+      height: 20px;
+    }
+
+    .btn-bg {
+      right: -3px;
+      width: 44px;
+      height: 24px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-50%) scaleX(0.5);
+    }
+  }
+}

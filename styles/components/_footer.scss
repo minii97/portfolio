@@ -1,0 +1,236 @@
+.footer {
+  padding: 50px 15px 20px;
+
+  &-header {
+    margin-bottom: 40px;
+
+    .title {
+      margin-bottom: 30px;
+      font-size: 50px;
+      text-align: center;
+    }
+  }
+
+  &-phone {
+    @include flexbox(center);
+    margin-bottom: 30px;
+
+    .logo {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    &-desc {
+      font-size: 13px;
+      font-weight: 600;
+
+      a {
+        color: $purple;
+      }
+    }
+  }
+
+  &-contact-list {
+    @include flexbox;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+  }
+
+  &-contact-item {
+    width: 50%;
+    padding: 15px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    &:nth-child(odd) {
+      border-right: 1px solid var(--color-border);
+    }
+
+    a {
+      position: relative;
+      width: 100%;
+
+      i {
+        display: block;
+        padding-bottom: 100px;
+      }
+
+      span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  &-copyright {
+    span,
+    p {
+      font-size: 12px;
+      color: var(--color-text-gray);
+      text-align: center;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 12px;
+    }
+  }
+
+  @include responsive(T) {
+    padding: 80px 30px 30px;
+
+    &-header {
+      @include flexbox(between);
+
+      .title {
+        margin-bottom: 0;
+        font-size: 80px;
+      }
+    }
+
+    &-phone {
+      justify-content: flex-end;
+      margin-bottom: 60px;
+
+      &-desc {
+        width: auto;
+        font-size: 16px;
+      }
+    }
+
+    &-contact-list {
+      margin-bottom: 60px;
+    }
+
+    &-contact-item {
+      padding: 30px;
+
+      a {
+        font-size: 24px;
+      }
+    }
+
+    &-copyright {
+      @include flexbox(between);
+
+      span,
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    padding: 80px 30px 30px 30px + $gnb-size-lg;
+
+    &-header {
+      .title {
+        font-size: 120px;
+      }
+
+      .btn-small {
+        height: 100px;
+        font-size: 30px;
+
+        i {
+          margin-right: 20px;
+          font-size: 28px;
+          transform: translateY(2px);
+        }
+      }
+    }
+
+    &-phone {
+      margin-bottom: 100px;
+
+      .logo {
+        width: 50px;
+        height: 50px;
+        transform: translateY(-2px);
+      }
+
+      &-desc {
+        font-size: 20px;
+        line-height: 1.5;
+
+        a {
+          position: relative;
+          transition: opacity 500ms cubic-bezier(0.59, 0.23, 0.22, 0.96);
+
+          &::after {
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $purple;
+            content: '';
+            transform: scaleX(0);
+            transition: transform 500ms cubic-bezier(0.59, 0.23, 0.22, 0.96);
+            transform-origin: right;
+          }
+
+          &:hover {
+            opacity: 0.7;
+          }
+
+          &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
+      }
+    }
+
+    &-contact-list {
+      margin-bottom: 100px;
+    }
+
+    &-contact-item {
+      width: 25%;
+      border-bottom: 0 !important;
+      transition: background-color 500ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+
+      &:hover {
+        background-color: var(--color-text);
+
+        * {
+          color: var(--color-background);
+        }
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid var(--color-border);
+      }
+
+      a {
+        span {
+          position: static;
+          right: auto;
+          transition: color 500ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+        }
+
+        i {
+          padding-bottom: 200px;
+          font-size: 22px;
+          transition: color 500ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+        }
+      }
+    }
+  }
+}

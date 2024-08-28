@@ -1,0 +1,159 @@
+.menu-contact {
+  @include flexbox(between, start);
+  flex-direction: column;
+  padding: 40px 30px;
+  background-image: linear-gradient(315deg, #0f0d19 0%, #25213f 100%);
+  border-radius: 20px;
+  transform: scale(0, 0);
+  transition: transform 700ms cubic-bezier(0.59, 0.23, 0.22, 0.96);
+  transform-origin: 100% 100%;
+
+  &-wrap {
+    width: 100%;
+  }
+
+  &-header {
+    position: relative;
+    height: 170px;
+
+    i,
+    &-img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 300ms cubic-bezier(0.59, 0.23, 0.22, 0.96);
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &-img {
+      width: 150px;
+      height: 150px;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    i {
+      font-size: 150px;
+      color: $text-gray-color-2;
+    }
+  }
+
+  &-item {
+    a {
+      @include flexbox(between);
+      position: relative;
+      padding: 22px 0;
+
+      &:hover {
+        .contact-item-text {
+          opacity: 1;
+        }
+
+        .contact-item-logo {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        &::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #272727;
+        content: '';
+      }
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $white;
+        content: '';
+        transform: scaleX(0);
+        transition: transform 500ms cubic-bezier(0.59, 0.23, 0.22, 0.96);
+        transform-origin: right;
+      }
+
+      .contact-item-text {
+        font-size: 36px;
+        font-weight: 400;
+        color: $white;
+        opacity: 0.2;
+        transition: opacity 500ms cubic-bezier(0.59, 0.23, 0.22, 0.96);
+      }
+
+      .contact-item-logo {
+        width: 32px;
+        height: 32px;
+        opacity: 0.2;
+        transform: scale(0.6);
+        transition: all 500ms cubic-bezier(0.59, 0.23, 0.22, 0.96);
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &-footer {
+    p {
+      color: $white;
+      opacity: 0.2;
+    }
+
+    .mail-address {
+      a {
+        position: relative;
+        font-size: 32px;
+        font-weight: 600;
+        color: $white;
+        opacity: 0.2;
+        transition: opacity 500ms cubic-bezier(0.59, 0.23, 0.22, 0.96);
+
+        &:hover {
+          opacity: 1;
+
+          &::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
+
+        &::after {
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $white;
+          content: '';
+          transform: scaleX(0);
+          transition: transform 500ms cubic-bezier(0.59, 0.23, 0.22, 0.96);
+          transform-origin: right;
+        }
+      }
+    }
+  }
+}
