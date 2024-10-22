@@ -1848,12 +1848,12 @@ address {
   pointer-events: none;
   background-color: #9680ff;
   border-radius: 50%;
+  color: #fff;
+  white-space: nowrap;
   transition: transform 300ms ease-out, width 500ms cubic-bezier(0.17, 0.04, 0.03, 0.94), height 500ms cubic-bezier(0.17, 0.04, 0.03, 0.94); }
   .cursor.cursor-active {
     width: 100px;
     height: 100px; }
-  .cursor.cursor-menu::after, .cursor.cursor-projects::after, .cursor.cursor-projects-article::after, .cursor.cursor-call::after, .cursor.cursor-youtube::after, .cursor.cursor-close::after {
-    color: #fff; }
   .cursor.cursor-menu::after {
     content: 'Menu'; }
   .cursor.cursor-projects::after {
@@ -1866,5 +1866,7 @@ address {
     content: 'Watch'; }
   .cursor.cursor-close::after {
     content: 'Close'; }
+  .cursor.cursor-review::after {
+    content: 'Review'; }
 
 /*# sourceMappingURL=style.css.map */

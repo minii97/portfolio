@@ -5,7 +5,9 @@ const projectsThumbnail = document.querySelectorAll(
   '.projects-article-thumbnail'
 )
 
-const moveToYoutubeLink = document.querySelectorAll('.etc-work-youtube-link')
+const codeReviewButtons = document.querySelectorAll('.code-review-btn')
+
+const youtubeButtons = document.querySelectorAll('.etc-work-youtube-link')
 
 const phoneBtn = document.querySelector('.footer-phone-desc a')
 
@@ -47,6 +49,10 @@ projectsThumbnail.forEach((item) => {
   activeCursor(item)
 })
 
-moveToYoutubeLink.forEach((item) => {
+youtubeButtons.forEach((item) => {
+  activeCursor(item)
+})
+
+codeReviewButtons.forEach((item) => {
   activeCursor(item)
 })
