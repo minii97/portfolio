@@ -31,7 +31,8 @@ const toggleTheme = () => {
 // 윈도우에 클릭이벤트를 달아놓음 = body 태그 전에 스크립트를 삽입하였기 때문에 특정 DOM 요소에 이벤트리스너를 추가할 수 없음.
 // 내가 클릭한 요소의 부모요소의 id가 "TOGGLE_BUTTON_ID" 변수의 저장값과 일치한다면 toggleTheme 함수 실행, 아니라면 아무일도 일어나지 않는다.
 window.addEventListener('click', (e) => {
-  if (e.target.parentNode.id !== TOGGLE_BUTTON_ID) return
+  if (!e.target.closest(`#${TOGGLE_BUTTON_ID}`)) return
+
   toggleTheme()
 })
 
